@@ -1,9 +1,14 @@
 import 'dart:math';
 
+
+var r = Random();
+
 void main() {
   ops_math();
   print('--------------------------------');
   comparision();
+  print('--------------------------------');
+  logical();
 }
 
 void ops_math() {
@@ -18,7 +23,7 @@ void ops_math() {
 }
 
 void comparision () {
-  var r = Random();
+
   int number = r.nextInt(300);
   print("The number $number is ${number > 50 ? 'greater than' : 'not greater than'} 50");
 
@@ -29,3 +34,11 @@ void comparision () {
   }
   print("The number $number can ${(number ~/ 5) == 0 ? '' : 'not '}be divided by 5 without a remainder");
 }
+
+void logical() {
+  bool hasMoney = r.nextBool();
+  bool isStoreOpen  = r.nextBool();
+
+  print("We ${hasMoney && isStoreOpen ? 'can' : 'cannot'} buy something in the store");
+  print("We have to${!hasMoney|| !isStoreOpen ? ' not ' : ' '}wait to buy something in the store");
+  }
