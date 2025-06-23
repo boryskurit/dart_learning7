@@ -11,7 +11,8 @@ void main() {
   logical();
   print('--------------------------------');
   ternar();
-
+  print('--------------------------------');
+  assigment();  
 }
 
 void ops_math() {
@@ -50,4 +51,18 @@ void ternar() {
   var temperature = r.nextInt(100) - 50;
   print("The temperature is $temperature degrees Celsius, it is ${temperature > 25? 'warm enough' : 'cold enough'} outside.");
   print("${temperature < 10? 'It is too cold outside' : ''}");
+}
+
+void assigment() {
+  int score = 0;
+  int correctAnswers = 17;
+  int mistakes = 3;
+  int totalQuestions = 20;
+
+  score += correctAnswers * 10;
+  score -= mistakes * 5;
+  score *= 2;
+  score ~/= totalQuestions;
+
+  print(score);
 }
