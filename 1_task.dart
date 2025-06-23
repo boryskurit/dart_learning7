@@ -15,6 +15,8 @@ void main() {
   assigment();  
   print('--------------------------------');
   conditions();
+  print('--------------------------------');
+  switchstatement();
 
 }
 
@@ -85,4 +87,37 @@ void conditions() {
     }
   }
 
+}
+
+void switchstatement() {
+  int day = r.nextInt(7) + 1;
+  print("Today is day $day of the week.");
+  
+  switch (day) {
+    case 1:
+      print("Monday");
+      break;
+    case 2:
+      print("Tuesday");
+      break;
+    case 3:
+      print("Wednesday");
+      break;
+    case 4:
+      print("Thursday");
+      break;
+    case 5:
+      print("Friday");
+      break;
+    case 6:
+      print("Saturday");
+      print("Dayoff");
+      break;
+    case 7:
+      print("Sunday");
+      print("Dayoff");
+      break;
+    default:
+      print("Invalid day");
+  }
 }
