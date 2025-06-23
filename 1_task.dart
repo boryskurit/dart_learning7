@@ -22,7 +22,7 @@ void main() {
   print('--------------------------------');
   whilestats();
   print('--------------------------------');
-
+  breakcont();
 
 
 }
@@ -158,4 +158,20 @@ void whilestats() {
     i--;
   }
 
+}
+
+void breakcont() {
+  int i = 0;
+
+  for (i = 1; i <= 20; i++) {
+    if (i % 3 == 0) {
+      print("Skipping $i");
+      continue; 
+    }
+    if (i > 15) {
+      print("Breaking the loop at $i");
+      break; 
+    }
+    print(i);
+  }
 }
