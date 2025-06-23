@@ -13,6 +13,9 @@ void main() {
   ternar();
   print('--------------------------------');
   assigment();  
+  print('--------------------------------');
+  conditions();
+
 }
 
 void ops_math() {
@@ -65,4 +68,21 @@ void assigment() {
   score ~/= totalQuestions;
 
   print(score);
+}
+
+void conditions() {
+  int examScore = 56;
+  if (examScore > 90) {
+  print("Excellent");
+  } else if (examScore >= 75) {
+    print("Good");
+  } else if (examScore >= 60) {
+    print("Satisfactory");
+  } else {
+    print("Failed");
+    if (examScore < 20) {
+      print("Repeat the cource");
+    }
+  }
+
 }
