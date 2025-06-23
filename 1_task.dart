@@ -17,6 +17,8 @@ void main() {
   conditions();
   print('--------------------------------');
   switchstatement();
+  print('--------------------------------');
+  forstats();
 
 }
 
@@ -120,4 +122,25 @@ void switchstatement() {
     default:
       print("Invalid day");
   }
+}
+
+
+void forstats() {
+  print("Numbers from 1 to 10:");
+
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+  }
+  print("");
+  print("Even numbers from 1 to 10:");
+  for (int i = 2; i <= 10; i+=2) {
+    print(i);
+  }
+
+var s = 0;
+for (int i = 1; i <= 10; i++) {
+    s += i;
+  }
+  print("The sum of numbers from 1 to 10 is: $s");
+
 }
